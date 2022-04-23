@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Club</title>
+    <link rel="stylesheet" href="./assets/css/LogIn.css">
+    <link rel="stylesheet" href="./assets/css/user.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body style="background-color:  #0c5774;">
+   <div id="header">
+       <!-- logo left -->
+        <div class="head-left">
+            <img src="./assets/image/lg-school.png" alt="logo-school" class="img-lg">
+        </div>
+        <div class="head-name">
+            <img src="./assets/image/lg-cl.png" alt="">
+        </div>
+        <div class="head-right">
+            <img src="./assets/image/lg-club.png" alt="logo-club" class="img-lg-club">
+        </div>
+   </div>
+
+   <!-- menu -->
+       <ul class="menu-bar">
+           <li class="menu-item">
+               <a href="#" class="menu-name">Home</a>
+            </li>
+            <li class="menu-item">
+                <a href="#" class="menu-name">Change-Pass</a>
+             </li>
+             </li>
+           <li class="menu-item">
+               <a href="#" class="menu-name">Log-out</a>
+            </li>
+       </ul>
+
+
+<!-- body -->
+<div id="body-form">
+    <p class="head-label">Meeting Attendence</p>
+    <div class="date">
+        <div class="label">
+            <p>Month: </p>
+        </div>
+        <div class="choose" >
+            <select class='gMonth2' onchange="show_month()">
+            <option value=''>--Select Month--</option>
+            <option selected value='1'>Janaury</option>
+            <option value='2'>February</option>
+            <option value='3'>March</option>
+            <option value='4'>April</option>
+            <option value='5'>May</option>
+            <option value='6'>June</option>
+            <option value='7'>July</option>
+            <option value='8'>August</option>
+            <option value='9'>September</option>
+            <option value='10'>October</option>
+            <option value='11'>November</option>
+            <option value='12'>December</option>
+            </select> 
+        </div>
+        <div class="label">
+            <p>Year: </p>
+        </div>
+        <div class="choose" >
+            <select class='gMonth2' onchange="show_month()">
+            <option value=''>--Select Year--</option>
+            <option selected value='1'>2022</option>
+            <option value='2'>2019</option>
+            <option value='3'>2018</option>
+            <option value='4'>2017</option>
+            <option value='5'>2016</option>
+            </select> 
+        </div>
+    </div>
+
+<!-- table -->
+
+    <table class="table">
+        <thead class="table-head">
+            <tr>
+                <th>No</th>
+                <th>Date</th>
+                <th>Time In</th>
+                <th>Time Out</th>
+            </tr>
+        </thead>
+        <tbody class="table-body">
+            <tr>
+                <td>1</td>
+                <td>2/2/2001</td>
+                <td>10h15</td>
+                <td>2h20</td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>
+
+<!-- end body -->
+
+
+   <!-- footer -->
+   <div id="footer">
+        <div class="about">
+            <h2 class="about-header"> Can Tho campus</h2>
+            <hr>
+            <p class="ft-content">UNIVERSITY OF GREENWICH (VIỆT NAM)</p>
+            <p class="ft-content">Số 160 đường 30/4, phường An phú, quận Ninh Kiều - TP. Cần Thơ</p>
+            <p class="ft-content">Điện thoại: 0292.3512.369</p>
+            <p class="ft-content">Hotline: 0968.670.804 | 0936.600.861</p>
+        </div>
+        <div class="icon">
+            <i class="fa-solid fa-envelope">Gmail</i>
+            <i class="fa-brands fa-facebook">Facebook</i>
+        </div>
+        <div class="tag">
+            <p>© Greenwich University | 2022 IT Club coppyright</p>
+        </div>
+   </div>
+
+</body>
+</html>

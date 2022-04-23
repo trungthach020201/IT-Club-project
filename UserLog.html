@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="./assets/css/userlog.css">
+    <link rel="stylesheet" href="./assets/css/LogIn.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UserLog</title>
+</head>
+
+<body>
+    <div id="header">
+        <!-- logo left -->
+        <div class="head-left">
+            <img src="./assets/image/lg-school.png" alt="logo-school" class="img-lg">
+        </div>
+        <div class="head-name">
+            <img src="./assets/image/lg-cl.png" alt="">
+        </div>
+        <div class="head-right">
+            <img src="./assets/image/lg-club.png" alt="logo-club" class="img-lg-club">
+        </div>
+    </div>
+
+    <!-- menu -->
+    <ul class="menu-bar">
+        <li class="menu-item">
+            <a href="#" class="menu-name">Home</a>
+        </li>
+        <li class="menu-item">
+            <a href="#" class="menu-name">Manage User</a>
+        </li>
+        <li class="menu-item">
+            <a href="#" class="menu-name">Devices</a>
+        </li>
+        <li class="menu-item">
+            <a href="#" class="menu-name">User log</a>
+        </li>
+        <li class="menu-item">
+            <a href="#" class="menu-name">Log-out</a>
+        </li>
+    </ul>
+    <!-- body -->
+    <div class="log-container">
+        <div class="log-header">
+            <div class="log-label">
+                <p>User Daily Logs</p>
+            </div>
+            <div class="btn-export js-btn-export">
+                <button>Log Filter/ Export to Excel</button>
+            </div>
+        </div>
+        <table class="table-log">
+            <thead class="table-log-head">
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Serial Number</th>
+                    <th>Card UID</th>
+                    <th>Device Dep</th>
+                    <th>Date</th>
+                    <th>Time-in</th>
+                    <th>Time-out</th>
+
+                </tr>
+            </thead>
+            <tbody class="table-log-body">
+                <tr>
+                    <td>123</td>
+                    <td>Thach Ngoc Trung</td>
+                    <td>GCC19009</td>
+                    <td>0865894853</td>
+                    <td>MAY1</td>
+                    <td>02/02/2001</td>
+                    <td>18h30</td>
+                    <td>20h30</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <!-- end body -->
+
+
+    <!--modal filter  -->
+    <div class="modal-filter js-modal-filter">
+        <div class="md-filter-container js-modal-container-filter">
+            <div class="filter-header">
+                <h2 class="head-label">Filter Your User Log</h2>
+                <i class="filter-close js-modal-filter-close">X</i>
+            </div>
+            <div class="filter-body">
+                <div class="filter-body-cover">
+                    <div class="body-left">
+                        <div class="left-head">
+                            <p class="box-label">Filter By Date:</p>
+                        </div>
+                        <div class="left-right-body">
+                            <label for="datestart">Select from this Date:</label>
+                            <input type="date" class="date" id="datestart">
+                            <label for="dateend">To end of this Date:</label>
+                            <input type="date" class="date" id="dateend">
+                        </div>
+                    </div>
+                    <div class="body-right">
+                        <div class="right-head">
+                            <p class="box-label">Filter By Time:</p>
+                            <button class="time-in">Time-In</button>
+                            <button class="time-out">Time-Out</button>
+                        </div>
+                        <div class="left-right-body">
+                            <label for="timein">Select from this Time:</label>
+                            <input type="time" class="time" id="timein">
+                            <label for="timeout">To end of this Time:</label>
+                            <input type="time" class="time" id="timeout">
+                        </div>
+                    </div>
+                </div>
+                <div class="body-bottom">
+                    <div class="filter-1">
+                        <label for="">Filter By User</label>
+                        <select class="filter-select" placeholder="User">
+                            <option value="1">All User</option>
+                            <option value="1">Thach Ngoc Trung</option>
+                            <option value="1">Tran Phuoc Hao</option>
+                        </select>
+                    </div>
+                    <div class="filter-1">
+                        <label for="">Filter By Department</label>
+                        <select class="filter-select" placeholder="Department">
+                            <option value="1">All Department</option>
+                            <option value="1">1 Department</option>
+                            <option value="1">2 Department</option>
+                        </select>
+                    </div>
+                    <div class="filter-2">
+                        <label for="">Export to excel</label>
+                        <button class="export">Export</button>
+                    </div>
+                </div>
+            </div>
+            <div class="filter-footer">
+                <div class="footer-btn">
+                    <button class="btn-filter">Filter</button>
+                    <button class="btn-cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end modal filter -->
+
+
+    <!-- footer -->
+    <div id="footer">
+        <div class="contact-infor">
+            <div class="about">
+                <h2 class="about-header"> Can Tho campus</h2>
+                <hr>
+                <p class="ft-content">UNIVERSITY OF GREENWICH (VIET NAM)</p>
+                <p class="ft-content">160 30/4 street, An Phu ward, Ninh Kieu District - Cantho City</p>
+                <p class="ft-content">Tel: 0292.3512.369</p>
+                <p class="ft-content">Hotline: 0968.670.804 | 0936.600.861</p>
+            </div>
+            <div class="icon">
+                <i class="fa fa-solid fa-envelope">
+                    <span> Gmail </span>
+                </i>
+                <i class="gm fa-brands fa-facebook">
+                    <span class="text1">Facebook</span>
+                </i>
+            </div>
+        </div>
+        <div class="tag">
+            <p>© Greenwich University | 2022 IT Club copyright</p>
+        </div>
+    </div>
+
+
+    <script>
+    const filterLogs = document.querySelectorAll('.js-btn-export') //sellect the class use to use js
+    const closeFilter = document.querySelector('.js-modal-filter-close')
+    const modalFilter =document.querySelector('.js-modal-filter')
+    const modalcontainerFilter = document.querySelector('.js-modal-container-filter')
+    
+    function showFilter() {
+        modalFilter.classList.add('open')
+    }
+
+    for(const filterLog of filterLogs ){
+        filterLog.addEventListener('click',showFilter)
+    }
+
+    function hideModalAdd(){
+        modalFilter.classList.remove('open')
+    }
+    closeFilter.addEventListener('click',hideModalAdd)
+
+    modalFilter.addEventListener('click',hideModalAdd)
+
+    modalcontainerFilter.addEventListener('click', function (event) {
+        event.stopPropagation() //stop nổi bọt
+    })
+    </script>
+
+</body>
+
+</html>
