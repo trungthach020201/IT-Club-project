@@ -159,8 +159,9 @@ html {
 .table-body tr, td {
     background-color: rgb(166, 194, 220);
     color: #000;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
+    height: 40px;
 }
 .update-name {
     color: #000;

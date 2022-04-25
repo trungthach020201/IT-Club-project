@@ -72,10 +72,21 @@ html {
     display: flex;
 }
 
+@keyframes FadeInto {
+    from {
+      opacity: 0;
+      transform: translateX(-1400px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
 .left {
     width: 50%;
     padding-top: 120px;
     padding-left: 100px;
+    animation: FadeInto ease 1s;
 }
 
 .left .title {
@@ -106,8 +117,21 @@ html {
     border: 1px solid #000000;
     box-shadow: 0 0 10px #000000;
     border-radius: 7px;
+    animation: modalFadeIn ease 1s;
     background-color:  #5e7087;
 }
+
+@keyframes modalFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-140px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
 .log-in h1 {
     margin-top: 25%;
     color: rgb(20, 19, 19);
