@@ -144,7 +144,7 @@
             <div class="filter-footer">
                 <div class="footer-btn">
                     <button class="btn-filter">Filter</button>
-                    <button class="btn-cancel">Cancel</button>
+                    <button class="btn-cancel js-cancel-filter">Cancel</button>
                 </div>
             </div>
         </div>
@@ -182,6 +182,7 @@
     const filterLogs = document.querySelectorAll('.js-btn-export') //sellect the class use to use js
     const closeFilter = document.querySelector('.js-modal-filter-close')
     const modalFilter =document.querySelector('.js-modal-filter')
+    const cancleFilter =document.querySelector('.js-cancel-filter')
     const modalcontainerFilter = document.querySelector('.js-modal-container-filter')
     
     function showFilter() {
@@ -195,6 +196,8 @@
     function hideModalAdd(){
         modalFilter.classList.remove('open')
     }
+    cancleFilter.addEventListener('click',hideModalAdd)
+    
     closeFilter.addEventListener('click',hideModalAdd)
 
     modalFilter.addEventListener('click',hideModalAdd)
