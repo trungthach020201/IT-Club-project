@@ -48,7 +48,7 @@
         <div class="table-container">
             <div class="table-head-text">
                 <p>Your Device:</p>
-                <button class="add-divice">New Device</button>
+                <button class="add-divice js-add-device">New Device</button>
             </div>
             <div class="table-body">
                 <div class="sub-table">
@@ -87,9 +87,63 @@
         </div>
     </div>
 
-
-
     <!-- end body -->
+
+    <!-- Modal add new device -->
+    <div class="modal-device js-modal-de">
+        <div class="modal-de-container js-modal-de-container">
+            <div class="md-de-head">
+                <div class="de-label">
+                    <p>Add New Device</p>
+                    <i class="de-close js-de-close">X</i>
+                </div>
+            </div>
+            <form action="" method="post" class="md-de-body">
+                <div class="de-input">
+                    
+                        <p class="input-label">Device Name:</p>
+                        <input type="text" class="input-box" placeholder="Enter device name please!!!">
+                        <p class="input-label">Device Department:</p>
+                        <input type="text" class="input-box" placeholder="Enter device name please!!!">
+                   
+                </div>
+                <div class="de-button">
+                    <button class="add-new-de">Create New Device</button>
+                    <button class="close-de-md js-de-md-close">Close</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- End modal -->
+    <script>
+        const AddDe = document.querySelectorAll('.js-add-device') //sellect the class use to use js
+        const closeAdd = document.querySelector('.js-de-close')
+        const modalDe =document.querySelector('.js-modal-de')
+        const Decontainer = document.querySelector('.js-modal-de-container')
+        const closebtn = document.querySelector('.js-de-md-close')
+        
+        function showModal() {
+            modalDe.classList.add('open')
+        }
+    
+        for(const AddDes of AddDe ){
+            AddDes.addEventListener('click',showModal)
+        }
+    
+        function hideModal(){
+            modalDe.classList.remove('open')
+        }
+        closeAdd.addEventListener('click',hideModal)
+        closebtn.addEventListener('click', hideModal)
+    
+        modalDe.addEventListener('click',hideModal)
+    
+        Decontainer.addEventListener('click', function (event) {
+            event.stopPropagation() //stop nổi bọt
+        })
+
+    </script>
 
 
     <!-- footer -->
