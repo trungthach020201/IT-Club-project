@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="./assets/css/LogIn.css">
     <link rel="stylesheet" href="./assets/css/index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="assets/js/resspo.js"></script>
 </head>
 <body>
    <div id="header">
@@ -16,7 +18,7 @@
             <img src="./assets/image/lg-school.png" alt="logo-school" class="img-lg">
         </div>
         <div class="head-name">
-            <img src="./assets/image/lg-cl.png" alt="">
+            <img src="./assets/image/lg-cl.png" alt="" class="img-club">
         </div>
         <div class="head-right">
             <img src="./assets/image/lg-club.png" alt="logo-club" class="img-lg-club">
@@ -25,22 +27,29 @@
 
    <!-- menu -->
        <ul class="menu-bar">
-           <li class="menu-item">
-               <a href="#" class="menu-name">Home</a>
-            </li>
-           <li class="menu-item">
-               <a href="#" class="menu-name">Manage User</a>
-            </li>
-           <li class="menu-item">
-               <a href="#" class="menu-name">Devices</a>
-            </li>
-            <li class="menu-item">
-                <a href="#" class="menu-name">User log</a>
-             </li>
-           <li class="menu-item">
-               <a href="#" class="menu-name">Log-out</a>
-            </li>
+           <div class="outline-mode"><p class="menu-mode">≡</p></div>
+           <div class="menu-control">
+                <!-- <li class="outline-close">
+                    <div class="close-menu">❌</div>
+                </li> -->
+                <li class="menu-item">
+                    <a href="#" class="menu-name">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-name">Manage User</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-name">Devices</a>
+                </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-name">User log</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#" class="menu-name">Log-out</a>
+                </li>
+           </div>
        </ul>
+
 <!-- body -->
 
     <div id="user-container">
@@ -85,10 +94,14 @@
             </div>
             <div class="icon">
                 <i class="fa fa-solid fa-envelope">
-                    <span> Gmail </span>
+                    <span class="text1">
+                        <a href="https://mail.google.com/mail/u/1/?view=cm&fs=1&to=itclubofgwu@gmail.com&tf=1" class="ft-infor-linker">itclubofgwu@gmail.com</a>
+                    </span>
                 </i>
                 <i class="gm fa-brands fa-facebook">
-                    <span class="text1">Facebook</span>
+                    <span class="text1">
+                        <a href="https://www.facebook.com/Greewich.ITClub.CanTho" class="ft-infor-linker">fb.com/Greewich.ITClub.CanTho</a>
+                    </span>
                 </i>
             </div>
         </div>
