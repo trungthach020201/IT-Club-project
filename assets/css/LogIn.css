@@ -21,6 +21,13 @@ html {
  height: 200px;
 }
 
+h1{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+    color: white;
+}
+
 .img-lg{
     height: 150px;
     margin-top: calc(100px - 75px);
@@ -34,6 +41,12 @@ html {
     margin-top: calc(100px - 75px);
 }
 
+.errors{
+    text-shadow: 1px 0px 1px rgb(58, 58, 58);
+    background-color: rgba(200, 200, 200, 0.1);
+    border-radius: 10px;
+    padding: 0px 10px;
+}
 
 .menu-bar {
     display: flex;
@@ -82,19 +95,16 @@ html {
       transform: translateX(0);
     }
   }
-.left {
+  .left {
     width: 50%;
     padding-top: 120px;
-    padding-left: 100px;
+    padding-left: 50px;
     animation: FadeInto ease 1s;
 }
 
-.left .title {
-    height: 100%;
-}
-.left .title h1 {
+.left .title h2 {
     color: #fff;
-    font-size: 95px;
+    font-size: 70px;
     letter-spacing: 5px;
 }
 .left p {
@@ -121,6 +131,8 @@ html {
     background-color:  #5e7087;
 }
 
+
+
 @keyframes modalFadeIn {
     from {
       opacity: 0;
@@ -132,7 +144,7 @@ html {
     }
   }
 
-.log-in h1 {
+.log-in h2 {
     margin-top: 15%;
     color: rgb(20, 19, 19);
     text-align: center;
@@ -219,4 +231,58 @@ html {
     font-size: 16px;
     /* display: none; */
     margin-left: 13%;
+}
+
+.hide{
+    overflow: hidden;
+}
+
+.reflex{
+    margin-top: 70px;
+}
+
+@media screen and (max-width: 900px) {
+    .content {
+        width: 300%;
+        height: 100%;
+        display: block;
+    }
+    .log-in{
+        margin-top: -300px;
+        margin-bottom: 200px;
+        width: 100%;
+        height: 400px;
+    }
+    
+    .right {
+        margin: 1%;
+        width: 98%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .barrior{
+        height: 700px;
+        overflow: hidden;
+    }
+    #page {
+        display: flex;
+        width: 95%;
+        height: 1000px;
+        background-color: #0c5774;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        margin: 1% calc(50% - 47.5%) 1% calc(50% - 47.5%);
+    }
+    .left .title h2 {
+        color: #fff;
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+    .text, .password{
+        height: 20px;
+    }
 }
