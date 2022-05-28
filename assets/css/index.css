@@ -56,6 +56,10 @@ html {
     font-weight: normal;
 }
 
+.ft-infor-linker:hover{
+    text-decoration: underline;
+}
+
 .icon{
     padding-right: 50px;
 }
