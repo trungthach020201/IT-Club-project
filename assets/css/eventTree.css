@@ -112,7 +112,7 @@
     
     .tree-name{
         font-size: 30px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
 
     .tree-form{
@@ -121,7 +121,7 @@
 
     .tree-item-child{
         width: auto;
-        height: 170px;
+        height: 190px;
         overflow: hidden;
     }
 
@@ -141,8 +141,8 @@
     }
     
     .tree-item-cg{
-        font-size: 30px;
-        margin-top: 20%;
+        margin-top: 5%;
+        margin-bottom: 5%;
         transform: translateY(-30%);
     }
 
@@ -192,6 +192,6 @@
     }
 
     .tree-item-cg{
-        font-size: 15px;
+        font-size: 20px;
     }
 }
